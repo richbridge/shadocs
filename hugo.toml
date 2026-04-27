@@ -37,8 +37,8 @@ ignoreLogs             = ['warning-goldmark-raw-html']
     source = 'openapi'
     target = 'static/openapi'
   [[module.imports]]
-    path = "bulma"
-    version = "1.0.4"
+    source = "bulma"
+    target = 'bulma'
   [[module.imports.mounts]]
     source = "sass"
     target = "bulma/sass"
