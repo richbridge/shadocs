@@ -1,0 +1,201 @@
+name: Check
+
+on:
+  workflow_dispatch:
+  push:
+
+env:
+  HUGO_MIN_VERSION: 0.156.0
+  HUGO_MAX_VERSION: 0.160.1
+
+jobs:
+  define-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      hugo_versions: ${{ steps.hugo-versions.outputs.hugo_versions }}
+    steps:
+      - name: Define Hugo versions
+        id: hugo-versions
+        run: |
+          echo "hugo_versions=[\"$HUGO_MIN_VERSION\", \"$HUGO_MAX_VERSION\"]" >> "$GITHUB_OUTPUT"
+  hugo-build:
+    name: Hugo build
+    needs: define-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        hugo_version: ${{fromJson(needs.define-matrix.outputs.hugo_versions)}}
+    steps:
+      - name: Checkout theme repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Cache Homebrew dependencies
+        uses: actions/cache@v5
+        with:
+          key: brew-${{ runner.os }}-${{ matrix.hugo_version }}
+          path: |
+            /home/linuxbrew/.linuxbrew/
+      - name: Cache Hugo dependencies
+        uses: actions/cache@v5
+        with:
+          key: hugo-${{ runner.os }}-${{ matrix.hugo_version }}
+          path: |
+            /home/runner/.local/bin/
+            /home/runner/.cache/hugo_cache/
+      - name: Download Hugo binaries
+        run: |
+          if [ ! -f /home/runner/.local/bin/hugo_${{ matrix.hugo_version }} ]; then
+            printf "%70s\n" | tr ' ' '-'
+            printf "%-60s%10s\n" "-> Downloading Hugo version:" "${{ matrix.hugo_version }}"
+            printf "%70s\n" | tr ' ' '-'
+            HUGO_ARCHIVE="hugo_extended_${{ matrix.hugo_version }}_linux-amd64.tar.gz"
+            curl --create-dirs --output-dir /home/runner/.local/bin -H "Accept: application/octet-stream" -sLO "https://github.com/gohugoio/hugo/releases/download/v${{ matrix.hugo_version }}/${HUGO_ARCHIVE}"
+            tar -xf /home/runner/.local/bin/${HUGO_ARCHIVE} -C /home/runner/.local/bin
+            cp /home/runner/.local/bin/hugo /home/runner/.local/bin/hugo_${{ matrix.hugo_version }}
+            rm -f /home/runner/.local/bin/${HUGO_ARCHIVE}
+            echo "/home/runner/.local/bin" >> ${GITHUB_PATH}
+          fi
+          printf "%70s\n" | tr ' ' '-'
+          hugo_${{ matrix.hugo_version }} version
+          printf "%70s\n" | tr ' ' '-'
+      - name: Install dependencies
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew update
+          brew tap dart-lang/dart
+          brew install sass/sass/sass htmltest
+          brew cleanup
+      - name: Build theme
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          go version
+          printf "%70s\n" | tr ' ' '-'
+          sass --version
+          printf "%70s\n" | tr ' ' '-'
+          hugo_${{ matrix.hugo_version }} version
+          printf "%70s\n" | tr ' ' '-'
+          hugo_${{ matrix.hugo_version }} -s exampleSite
+  link-check:
+    name: Link check
+    runs-on: ubuntu-latest
+    needs: hugo-build
+    steps:
+      - name: Checkout theme repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Cache Homebrew dependencies
+        uses: actions/cache@v5
+        with:
+          fail-on-cache-miss: true
+          key: brew-${{ runner.os }}-${{ env.HUGO_MAX_VERSION }}
+          path: |
+            /home/linuxbrew/.linuxbrew/
+      - name: Cache Hugo dependencies
+        uses: actions/cache@v5
+        with:
+          fail-on-cache-miss: true
+          key: hugo-${{ runner.os }}-${{ env.HUGO_MAX_VERSION }}
+          path: |
+            /home/runner/.local/bin/
+            /home/runner/.cache/hugo_cache/
+      - name: Check links
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          htmltest --version
+          printf "%70s\n" | tr ' ' '-'
+          hugo -s exampleSite -b http://localhost:1313
+          printf "%70s\n" | tr ' ' '-'
+          htmltest
+  e2e:
+    name: E2E tests (${{ matrix.browser }})
+    runs-on: ubuntu-latest
+    needs: hugo-build
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chrome, firefox, edge]
+    steps:
+      - name: Checkout theme repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Cache Homebrew dependencies
+        uses: actions/cache@v5
+        with:
+          fail-on-cache-miss: true
+          key: brew-${{ runner.os }}-${{ env.HUGO_MAX_VERSION }}
+          path: |
+            /home/linuxbrew/.linuxbrew/
+      - name: Cache Hugo dependencies
+        uses: actions/cache@v5
+        with:
+          fail-on-cache-miss: true
+          key: hugo-${{ runner.os }}-${{ env.HUGO_MAX_VERSION }}
+          path: |
+            /home/runner/.local/bin/
+            /home/runner/.cache/hugo_cache/
+      - name: Cache npm
+        uses: actions/cache@v5
+        with:
+          key: npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          path: ~/.npm
+      - name: Cache Cypress
+        uses: actions/cache@v5
+        with:
+          key: cypress-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          path: ~/.cache/Cypress
+      - name: Execute E2E tests (${{ matrix.browser }})
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          printf "%70s\n" | tr ' ' '-'
+          npm ci
+          printf "%70s\n" | tr ' ' '-'
+          npx cypress verify
+          npx cypress info
+          npx cypress version
+          npx cypress version --component package
+          npx cypress version --component binary
+          npx cypress version --component electron
+          npx cypress version --component node
+          printf "%70s\n" | tr ' ' '-'
+          npm run cy:run:${{ matrix.browser }}
+  release:
+    if: github.ref_type == 'tag'
+    name: Release
+    runs-on: ubuntu-latest
+    needs: hugo-build
+    steps:
+      - name: Checkout theme repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Cache Homebrew dependencies
+        uses: actions/cache@v5
+        with:
+          fail-on-cache-miss: true
+          key: brew-${{ runner.os }}-${{ env.HUGO_MAX_VERSION }}
+          path: |
+            /home/linuxbrew/.linuxbrew/
+      - name: Cache Hugo dependencies
+        uses: actions/cache@v5
+        with:
+          fail-on-cache-miss: true
+          key: hugo-${{ runner.os }}-${{ env.HUGO_MAX_VERSION }}
+          path: |
+            /home/runner/.local/bin/
+            /home/runner/.cache/hugo_cache/
+      - name: Set archive name
+        id: archive-name
+        run: echo "zip_name=${GITHUB_REPOSITORY##*/}-${GITHUB_REF_NAME}.zip" >> "$GITHUB_OUTPUT"
+      - name: Create archive
+        run: cd exampleSite && hugo mod vendor && zip -r ${{ steps.archive-name.outputs.zip_name }} _vendor
+      - name: Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: exampleSite/${{ steps.archive-name.outputs.zip_name }}

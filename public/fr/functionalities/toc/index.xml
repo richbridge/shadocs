@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Table des matières on Documentation du thème Shadocs</title>
+    <link>http://localhost:1313/fr/functionalities/toc/</link>
+    <description>Recent content in Table des matières on Documentation du thème Shadocs</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <copyright>The MIT License (MIT) Copyright © 2020 Jordan GAZEAU</copyright>
+    <atom:link href="http://localhost:1313/fr/functionalities/toc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Page simple sans table des matières</title>
+      <link>http://localhost:1313/fr/functionalities/toc/toc_disabled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/functionalities/toc/toc_disabled/</guid>
+      <description>&lt;h1 id=&#39;titre-de-niveau-1&#39; class=&#34;title is-flex is-align-items-center mt-4 is-1&#34;&gt;Titre de niveau 1&lt;a href=&#39;#titre-de-niveau-1&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&lt;h2 id=&#39;titre-de-niveau-2&#39; class=&#34;title is-flex is-align-items-center mt-4 is-2&#34;&gt;Titre de niveau 2&lt;a href=&#39;#titre-de-niveau-2&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;h3 id=&#39;titre-de-niveau-3&#39; class=&#34;title is-flex is-align-items-center mt-4 is-3&#34;&gt;Titre de niveau 3&lt;a href=&#39;#titre-de-niveau-3&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;h4 id=&#39;titre-de-niveau-4&#39; class=&#34;title is-flex is-align-items-center mt-4 is-4&#34;&gt;Titre de niveau 4&lt;a href=&#39;#titre-de-niveau-4&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&lt;h5 id=&#39;titre-de-niveau-5&#39; class=&#34;title is-flex is-align-items-center mt-4 is-5&#34;&gt;Titre de niveau 5&lt;a href=&#39;#titre-de-niveau-5&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h5&gt;&lt;h6 id=&#39;titre-de-niveau-6&#39; class=&#34;title is-flex is-align-items-center mt-4 is-6&#34;&gt;Titre de niveau 6&lt;a href=&#39;#titre-de-niveau-6&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h6&gt;&lt;h1 id=&#39;deuxième-titre-de-niveau-1&#39; class=&#34;title is-flex is-align-items-center mt-4 is-1&#34;&gt;Deuxième titre de niveau 1&lt;a href=&#39;#deuxi%c3%a8me-titre-de-niveau-1&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&lt;h2 id=&#39;deuxième-titre-de-niveau-2&#39; class=&#34;title is-flex is-align-items-center mt-4 is-2&#34;&gt;Deuxième titre de niveau 2&lt;a href=&#39;#deuxi%c3%a8me-titre-de-niveau-2&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;h3 id=&#39;deuxième-titre-de-niveau-3&#39; class=&#34;title is-flex is-align-items-center mt-4 is-3&#34;&gt;Deuxième titre de niveau 3&lt;a href=&#39;#deuxi%c3%a8me-titre-de-niveau-3&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;h4 id=&#39;deuxième-titre-de-niveau-4&#39; class=&#34;title is-flex is-align-items-center mt-4 is-4&#34;&gt;Deuxième titre de niveau 4&lt;a href=&#39;#deuxi%c3%a8me-titre-de-niveau-4&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&lt;h5 id=&#39;deuxième-titre-de-niveau-5&#39; class=&#34;title is-flex is-align-items-center mt-4 is-5&#34;&gt;Deuxième titre de niveau 5&lt;a href=&#39;#deuxi%c3%a8me-titre-de-niveau-5&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h5&gt;&lt;h6 id=&#39;deuxième-titre-de-niveau-6&#39; class=&#34;title is-flex is-align-items-center mt-4 is-6&#34;&gt;Deuxième titre de niveau 6&lt;a href=&#39;#deuxi%c3%a8me-titre-de-niveau-6&#39; class=&#39;anchor&#39;&gt;#&lt;/a&gt;&#xA;&lt;/h6&gt;</description>
+    </item>
+  </channel>
+</rss>

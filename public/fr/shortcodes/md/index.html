@@ -1,0 +1,1526 @@
+<!doctype html>
+<html
+  class="theme-light"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="generator" content="Hugo 0.160.1">
+<meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Shortcode {{&lt; md &gt;}}." /><title>{{&lt; md &gt;}} | Documentation du thème Shadocs</title>
+
+<link
+  rel="icon"
+  href="/images/favicon.png"
+  type="image/x-icon"
+/>
+<link
+    rel="stylesheet"
+    rel="preload"
+    type="text/css"
+    href="/css/main.css"
+  /><link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/external/fontawesome.all.min.css"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/external/overlay-scrollbars/overlayscrollbars.min.css"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/external/asciinema/asciinema-player.min.css"
+    />
+</head>
+  <body class="is-flex is-flex-direction-column"><div id="navbarInfo" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content marginless is-flex">
+    <div class="message is-flex is-flex-direction-column is-flex-grow-1">
+      <div class="message-header is-justify-content-center">
+        <p>À propos</p>
+      </div>
+      <div class="message-body is-overflow-y">
+</div>
+    </div>
+  </div>
+</div>
+<div id="navbarShortcuts" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content marginless is-flex"><div class="message is-flex is-flex-direction-column is-flex-grow-1">
+        <div class="message-header is-justify-content-center">
+          <p>Raccourcis clavier</p>
+        </div>
+        <div class="message-body is-overflow-y"><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>q</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Obtenir le QR code de la page courante</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Echap</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Fermer les fenêtres modales</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Shift</kbd><p class="p-2">+</p><kbd>d</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Basculer en mode Clair/Sombre</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>i</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Afficher les informations du site</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>k</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Afficher les raccourcis</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>h</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Aller à la page d&#39;accueil</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>f</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Rechercher sur le site</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>m</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Réduire/Développer le menu latéral</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>t</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Réduire/Développer la table des matières</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>↑</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Aller en haut de la page</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>↓</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Aller en bas de la page</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Maj</kbd><p class="p-2">+</p><kbd>p</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>Imprimer la page courante</p>
+    </div>
+  </div><div class="shortcut-entry is-flex">
+    <div
+      class="shortcut-keys is-flex is-align-items-center is-justify-content-center p-2"
+    ><kbd>Shift</kbd><p class="p-2">+</p><kbd>1</kbd></div>
+    <div
+      class="shortcut-wording is-flex is-align-items-center is-justify-content-center p-2"
+    >
+      <p>显示快捷键示例</p>
+    </div>
+  </div></div>
+      </div></div>
+</div>
+<div id="modalContainer" class="modal">
+  <div class="modal-background"></div>
+  <div
+    id="modalWrapper"
+    class="modal-content marginless is-flex is-justify-content-center is-align-items-center"
+  ></div>
+</div>
+<nav
+  id="navbar"
+  class="navbar is-flex-grow-0 is-flex-shrink-1"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div id="navbarItemsContainer" class="navbar-brand"><div id="globalLogoContainer">
+  <a
+    id="globalLogo"
+    class="navbar-item navbar-item-standard is-flex-desktop is-align-items-center is-justify-content-center paddingless"
+    href="/fr/"
+  >
+    <img
+      alt="Page d&#39;accueil"
+      src="/images/logo.png"
+    />
+  </a>
+  <a
+    id="globalTouchLogo"
+    class="navbar-item navbar-item-standard is-flex-touch paddingless"
+    href="/fr/"
+  >
+    <img
+      alt="Page d&#39;accueil"
+      src="/images/logoTouch.png"
+    />
+  </a>
+</div>
+<div id="navbarItems" class="is-flex is-justify-content-space-between">
+      <div id="navbarItemsStart" class="is-flex">
+        <div id="searchContainer" class="navbar-item"><div class="control has-icons-left">
+  <input
+    id="search"
+    autocomplete="off"
+    class="input"
+    type="search"
+    placeholder="Rechercher"
+  />
+  <span class="icon is-left">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </span>
+  <div id="searchList" class="paddingless is-overflow-y is-hidden"></div>
+</div>
+</div>
+        <div
+          class="navbar-item"
+        >
+          <a
+            id="colorModeToggle"
+            class="button navbar-item-standard"
+            title="Basculer en mode Clair/Sombre"
+          >
+            <span
+              class="icon marginless is-inline-flex is-justify-content-center is-align-items-center"
+              id="themeToggle"
+            >
+              <i class="fa-duotone fa-solid fa-sun fa-xl"></i>
+              <i class="fa-duotone fa-solid fa-moon fa-xl"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        id="navbarItemsEnd"
+        class="is-flex is-justify-content-flex-end is-invisible"
+      ><div
+  class="navbar-item"
+>
+  <a
+    id="printButton"
+    class="button navbar-item-standard"
+    title="Imprimer la page courante"
+  >
+    <span class="icon-text">Imprimer</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-print fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div
+  class="navbar-item"
+>
+  <a
+    id="qrCodeButton"
+    class="button navbar-item-standard"
+    title="Obtenir le QR code de la page courante"
+  >
+    <span class="icon-text">QR code</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-qrcode fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div
+  class="navbar-item"
+>
+  <a
+    id="shortcutsInfo"
+    trigger="navbarShortcuts"
+    class="button navbar-item-standard navbar-trigger"
+    title="Raccourcis clavier"
+  >
+    <span class="icon-text">Raccourcis</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-keyboard fa-lg"></i>
+    </span>
+  </a>
+</div><div class="navbar-item"><div
+  id="taxonomiesSelectorContainer"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="taxonomiesSelector"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Taxonomies</span>
+      <span class="icon marginless">
+        <i class="fa-solid fa-tags fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-taxonomies"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content"><a
+              href="/fr/categories/"
+              class="dropdown-item has-text-weight-bold"
+            ><i class="fa-solid fa-table-cells"></i>Categories</a><a
+              href="/fr/tags/"
+              class="dropdown-item has-text-weight-bold"
+            ><i class="fa-solid fa-tag"></i>Tags</a></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="langsSelectorContainer"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="langsSelector"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Français</span>
+      <span class="icon marginless">
+        <i class="fa-solid fa-globe fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-langs"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content"><a
+            href="/shortcodes/md/"
+            class="dropdown-item has-text-weight-bold"
+          >English</a><div class="dropdown-item is-selected has-text-weight-bold">Français</div></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="versionsSelectorContainer"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="versionsSelector"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Versions</span>
+      <span class="icon marginless">
+        <i class="fa-solid fa-arrow-down-9-1 fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-versions"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content"><a
+          href="https://jgazeau.github.io/shadocs/"
+          class="dropdown-item has-text-weight-bold"
+        >latest</a><a
+          href="https://jgazeau.github.io/shadocs/404.html"
+          class="dropdown-item has-text-weight-bold"
+        >deprecated version</a></div>
+  </div>
+</div>
+</div><div
+  class="navbar-item"
+>
+  <a
+    id="siteInfo"
+    trigger="navbarInfo"
+    class="button navbar-item-standard navbar-trigger"
+    title="À propos"
+  >
+    <span class="icon-text">À propos</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-circle-question fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div id="navbarExtend" class="navbar-item">
+  <div id="navbarExtendWrapper">
+    <a id="navbarExtendButton" class="button navbar-item-standard">
+      <span class="icon marginless">
+        <i class="fa-solid fa-ellipsis fa-lg"></i>
+      </span>
+    </a>
+    <div id="navbarExtendItemsContainer">
+      <div
+        id="navbarExtendItemsWrapper"
+        class="is-flex is-flex-direction-column is-align-items-center"
+      ><div
+  class="navbar-item"
+>
+  <a
+    id="printButtonExtend"
+    class="button navbar-item-standard"
+    title="Imprimer la page courante"
+  >
+    <span class="icon-text">Imprimer</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-print fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div
+  class="navbar-item"
+>
+  <a
+    id="qrCodeButtonExtend"
+    class="button navbar-item-standard"
+    title="Obtenir le QR code de la page courante"
+  >
+    <span class="icon-text">QR code</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-qrcode fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div
+  class="navbar-item"
+>
+  <a
+    id="shortcutsInfoExtend"
+    trigger="navbarShortcuts"
+    class="button navbar-item-standard navbar-trigger"
+    title="Raccourcis clavier"
+  >
+    <span class="icon-text">Raccourcis</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-keyboard fa-lg"></i>
+    </span>
+  </a>
+</div><div class="navbar-item"><div
+  id="taxonomiesSelectorContainerExtend"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="taxonomiesSelectorExtend"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Taxonomies</span>
+      <span class="icon marginless">
+        <i class="fa-solid fa-tags fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-taxonomiesExtend"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content"><a
+              href="/fr/categories/"
+              class="dropdown-item has-text-weight-bold"
+            ><i class="fa-solid fa-table-cells"></i>Categories</a><a
+              href="/fr/tags/"
+              class="dropdown-item has-text-weight-bold"
+            ><i class="fa-solid fa-tag"></i>Tags</a></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="langsSelectorContainerExtend"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="langsSelectorExtend"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Français</span>
+      <span class="icon marginless">
+        <i class="fa-solid fa-globe fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-langsExtend"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content"><a
+            href="/shortcodes/md/"
+            class="dropdown-item has-text-weight-bold"
+          >English</a><div class="dropdown-item is-selected has-text-weight-bold">Français</div></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="versionsSelectorContainerExtend"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="versionsSelectorExtend"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Versions</span>
+      <span class="icon marginless">
+        <i class="fa-solid fa-arrow-down-9-1 fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-versionsExtend"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content"><a
+          href="https://jgazeau.github.io/shadocs/"
+          class="dropdown-item has-text-weight-bold"
+        >latest</a><a
+          href="https://jgazeau.github.io/shadocs/404.html"
+          class="dropdown-item has-text-weight-bold"
+        >deprecated version</a></div>
+  </div>
+</div>
+</div><div
+  class="navbar-item"
+>
+  <a
+    id="siteInfoExtend"
+    trigger="navbarInfo"
+    class="button navbar-item-standard navbar-trigger"
+    title="À propos"
+  >
+    <span class="icon-text">À propos</span>
+    <span class="icon marginless">
+      <i class="fa-solid fa-circle-question fa-lg"></i>
+    </span>
+  </a>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+</nav>
+<div id="navbarOverlay"></div>
+<div class="columns is-mobile paddingless marginless" id="mainContainer"><div id="sidebarContainer" class="column is-narrow paddingless marginless">
+  <div id="sidebarWrapper">
+    <div id="sidebar" class="marginless">
+      <aside class="menu paddingless marginless">
+        <ul class="menu-list marginless paddingless"><div class="card is-fs-expandable-icon marginless"><div class="card-header">
+      <a
+        href='/fr/theme/'
+        class='card-header-title is-flex has-text-centered is-clipped'>
+        <i class='fa-solid fa-user-gear fa-lg fa-fw is-align-content-center'></i></a></div>
+      </div><div class="is-expandable">
+      <div class="is-sidebar-list-wrapper"><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/theme/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Thème'>
+        <i class='fa-solid fa-user-gear fa-lg fa-fw is-align-content-center'></i><p class='is-clipped'>Thème</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/theme/introduction/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Introduction'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Introduction</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/theme/configuration/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Configuration'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Configuration</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/theme/extend/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Étendre le thème'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Étendre le thème</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/theme/beyond/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Vers l&#39;infini et au-delà !'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Vers l&#39;infini et au-delà !</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/theme/contribute/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Contributer'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Contributer</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="card is-fs-expandable-icon marginless"><div class="card-header">
+      <a
+        href='/fr/markdown/'
+        class='card-header-title is-flex has-text-centered is-clipped'>
+        <i class='fa-brands fa-markdown fa-lg fa-fw is-align-content-center'></i></a></div>
+      </div><div class="is-expandable">
+      <div class="is-sidebar-list-wrapper"><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/markdown/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Le Markdown'>
+        <i class='fa-brands fa-markdown fa-lg fa-fw is-align-content-center'></i><p class='is-clipped'>Le Markdown</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/title/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Titre'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Titre</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/horizontal_rule/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Séparation horizontale'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Séparation horizontale</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/paragraph/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Paragraphe'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Paragraphe</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/line_break/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Saut de ligne'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Saut de ligne</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/emphasis/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='L&#39;accentuation'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>L&#39;accentuation</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/blockquote/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Citation'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Citation</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/list/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Liste'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Liste</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/code/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Extrait de code'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Extrait de code</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/link/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Lien'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Lien</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/image/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Image'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Image</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/table/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Tableau'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Tableau</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/footnotes/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Note de bas de page'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Note de bas de page</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/emoji/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Emoji'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Emoji</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/escaping_character/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='L&#39;échappement des caractères'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>L&#39;échappement des caractères</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/markdown/commentary/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Commentaire'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Commentaire</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="card is-fs-expandable-icon marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/'
+        class='card-header-title is-flex has-text-centered is-clipped'>
+        <i class='fa-solid fa-cubes fa-lg fa-fw is-align-content-center'></i></a></div>
+      </div><div class="is-expandable">
+      <div class="is-sidebar-list-wrapper"><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Fonctionnalités'>
+        <i class='fa-solid fa-cubes fa-lg fa-fw is-align-content-center'></i><p class='is-clipped'>Fonctionnalités</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/sidebar/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Menu latéral'>
+        <i class='fa-solid fa-bars fa-fw is-align-content-center'></i><p class='is-clipped'>Menu latéral</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/sidebar/empty_section/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Section vide'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Section vide</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/sidebar/section/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Section'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Section</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/sidebar/section/simple_section_page/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Page simple de section'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Page simple de section</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class='card-header is-sidebar-disable'>
+      <div class='card-header-title is-flex has-text-centered is-clipped' href='/fr/functionalities/sidebar/disabled_section/'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped' title='Section désactivée'>Section désactivée</p></div><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/sidebar/disabled_section/simple_section_page_disabled/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Page simple de section désactivée'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Page simple de section désactivée</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/sidebar/section_disabled_pages/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Pages désactivées'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Pages désactivées</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class='card-header is-sidebar-disable'>
+      <div class='card-header-title is-flex has-text-centered is-clipped' href='/fr/functionalities/sidebar/section_disabled_pages/disabled_simple_page/'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped' title='Page simple désactivée'>Page simple désactivée</p></div></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class='card-header is-sidebar-disable'>
+      <div class='card-header-title is-flex has-text-centered is-clipped' href='/fr/functionalities/sidebar/section_disabled_pages/empty_simple_page/'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped' title='Page simple vide'>Page simple vide</p></div></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/sidebar/section_sorted_pages/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Pages triées'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Pages triées</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class='card-header is-sidebar-disable'>
+      <div class='card-header-title is-flex has-text-centered is-clipped' href='/fr/functionalities/sidebar/section_sorted_pages/simple_page1/'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped' title='Page simple 1'>Page simple 1</p></div></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class='card-header is-sidebar-disable'>
+      <div class='card-header-title is-flex has-text-centered is-clipped' href='/fr/functionalities/sidebar/section_sorted_pages/simple_page2/'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped' title='Page simple 2'>Page simple 2</p></div></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class='card-header is-sidebar-disable'>
+      <div class='card-header-title is-flex has-text-centered is-clipped' href='/fr/functionalities/sidebar/section_sorted_pages/simple_page3/'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped' title='Page simple 3'>Page simple 3</p></div></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/sidebar/simple_page/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Page simple'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Page simple</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/sidebar/icon_simple_page/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Page simple avec icone'>
+        <i class='fa-solid fa-icons fa-fw is-align-content-center'></i><p class='is-clipped'>Page simple avec icone</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/multilingual/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Multilingue'>
+        <i class='fa-solid fa-globe fa-fw is-align-content-center'></i><p class='is-clipped'>Multilingue</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/taxonomies/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Taxonomies'>
+        <i class='fa-solid fa-tags fa-fw is-align-content-center'></i><p class='is-clipped'>Taxonomies</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/toc/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Table des matières'>
+        <i class='fa-solid fa-list-ul fa-fw is-align-content-center'></i><p class='is-clipped'>Table des matières</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/toc/toc_disabled/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Page simple sans table des matières'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Page simple sans table des matières</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/thirdparty_imports/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Imports tiers'>
+        <i class='fa-solid fa-right-to-bracket fa-rotate-90 fa-fw is-align-content-center'></i><p class='is-clipped'>Imports tiers</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/search/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Recherche'>
+        <i class='fa-solid fa-magnifying-glass fa-fw is-align-content-center'></i><p class='is-clipped'>Recherche</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/mermaid/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Mermaid'>
+        <i class='fa-solid fa-chart-column fa-fw is-align-content-center'></i><p class='is-clipped'>Mermaid</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/shortcuts/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Raccourcis'>
+        <i class='fa-solid fa-keyboard fa-fw is-align-content-center'></i><p class='is-clipped'>Raccourcis</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/helpers_js/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Fonctions d&#39;aide Javascript'>
+        <i class='fa-brands fa-js fa-fw is-align-content-center'></i><p class='is-clipped'>Fonctions d&#39;aide Javascript</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/print/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Impression'>
+        <i class='fa-solid fa-print fa-fw is-align-content-center'></i><p class='is-clipped'>Impression</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/error404/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='404'>
+        <i class='fa-solid fa-circle-xmark fa-fw is-align-content-center'></i><p class='is-clipped'>404</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/qrcode/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='QR code d&#39;une page'>
+        <i class='fa-solid fa-qrcode fa-fw is-align-content-center'></i><p class='is-clipped'>QR code d&#39;une page</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless is-entries-expandable is-entries-shrinked"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/functionalities/banner/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Bannière'>
+        <i class='fa-solid fa-bullhorn fa-fw is-align-content-center'></i><p class='is-clipped'>Bannière</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-shrinked">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/banner/global/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Bannière globale'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Bannière globale</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/banner/single/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Bannière spécifique'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>Bannière spécifique</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/functionalities/versioning/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Versionning'>
+        <i class='fa-solid fa-timeline fa-fw is-align-content-center'></i><p class='is-clipped'>Versionning</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="card is-fs-expandable-icon marginless is-sidebar-active"><div class="card-header">
+      <a
+        href='/fr/shortcodes/'
+        class='card-header-title is-flex has-text-centered is-clipped'>
+        <i class='fa-solid fa-file-code fa-lg fa-fw is-align-content-center'></i></a></div>
+      </div><div class="is-expandable">
+      <div class="is-sidebar-list-wrapper"><li class="marginless is-tree-active is-entries-expandable is-entries-expanded"><div
+            class="card marginless"><div class="card-header">
+      <a
+        href='/fr/shortcodes/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Shortcodes'>
+        <i class='fa-solid fa-file-code fa-lg fa-fw is-align-content-center'></i><p class='is-clipped'>Shortcodes</p></a><a class="card-header-icon is-flex is-icon-expandable paddingless fa-fw is-icon-expanded">
+                <span class='icon'></span>
+              </a>
+            </div>
+          </div><ul class="marginless is-tree-active"><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/alert/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; alert &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; alert &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/asciinema/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; asciinema &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; asciinema &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/asyncapi/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; asyncapi &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; asyncapi &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/blockquote/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; blockquote &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; blockquote &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/collapsible/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; collapsible &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; collapsible &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/highcharts/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; highcharts &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; highcharts &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/intro/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; intro &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; intro &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/jsoneditor/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; jsoneditor &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; jsoneditor &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless is-sidebar-active"id='sidebarActiveEntry'><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/md/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; md &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; md &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/openapi/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; openapi &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; openapi &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/pagebreak/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; pagebreak &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; pagebreak &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/parameter/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; parameter &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; parameter &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/plaintext/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; plaintext &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; plaintext &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/snippet/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; snippet &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; snippet &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/tab-container/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; tab-container &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; tab-container &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div><div class="">
+      <div class=""><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/shortcodes/treeview/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='{{&lt; treeview &gt;}}'>
+        <i class='fa-solid fa-arrow-turn-up fa-rotate-90 fa-sm fa-fw is-align-content-center'></i><p class='is-clipped'>{{&lt; treeview &gt;}}</p></a></div>
+          </div></li>
+      </div>
+    </div></ul></li>
+      </div>
+    </div><div class="card is-fs-expandable-icon marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/sitemap/'
+        class='card-header-title is-flex has-text-centered is-clipped'>
+        <i class='fa-solid fa-sitemap fa-lg fa-fw is-align-content-center'></i></a></div>
+      </div><div class="is-expandable">
+      <div class="is-sidebar-list-wrapper"><li class="marginless"><div
+            class="card marginless"><div class="card-header is-single-link">
+      <a
+        href='/fr/sitemap/'
+        class='card-header-title is-flex has-text-centered is-clipped'
+          title='Plan du site'>
+        <i class='fa-solid fa-sitemap fa-lg fa-fw is-align-content-center'></i><p class='is-clipped'>Plan du site</p></a></div>
+          </div></li>
+      </div>
+    </div></ul>
+      </aside>
+    </div>
+    <div id="sidebarCollapsible" class="marginless">
+      <div class="card is-uncollapse-action">
+        <div
+          id="sidebarUncollapse"
+          class="card-header is-single-link"
+          title="Réduire/Développer le menu latéral"
+        >
+          <a class="card-header-title is-flex has-text-centered is-clipped">
+            <i
+              class="fa-solid fa-angles-right fa-lg fa-fw is-align-content-center"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="card is-collapse-action">
+        <div
+          id="sidebarCollapse"
+          class="card-header is-single-link"
+          title="Réduire/Développer le menu latéral"
+        >
+          <a class="card-header-title is-flex has-text-centered is-clipped">
+            <i
+              class="fa-solid fa-angles-left fa-lg fa-fw is-align-content-center"
+            ></i>
+            <p class="is-clipped">Réduire le menu latéral</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="sidebarMobileWrapper" class="column is-narrow is-hidden-desktop"></div>
+<div class="columns is-mobile is-flex is-flex-grow-1 marginless paddingless is-scroll-smooth has-toc" id="contentContainer">
+  <div
+    class="content column"
+    id="content"
+  ><div
+  id="contentTitle"
+  class="title is-1 has-text-centered is-uppercase p-4 mb-4"
+>{{&lt; md &gt;}}</div>
+<h1 id='description' class="title is-flex is-align-items-center mt-4 is-1">Description<a href='#description' class='anchor'>#</a>
+</h1><hr>
+<p>Le shortcode <strong>md</strong> permet de forcer la conversion d&rsquo;un bloc de texte écrit en markdown.<br>
+Ce shortcode est notamment utile pour rajouter du contenu écrit en syntaxes markdown complexes (listes, extrait de code, &hellip;), dans un tableau, ou dans le cas de shortcodes imbriqués.
+<div class="notification is-warning">Imbriquer deux shortcode <strong>md</strong> n&rsquo;est pas possible.</div>
+</p>
+<h1 id='paramètres' class="title is-flex is-align-items-center mt-4 is-1">Paramètres<a href='#param%c3%a8tres' class='anchor'>#</a>
+</h1><hr>
+<table>
+  <thead>
+      <tr>
+          <th>Nom</th>
+          <th>Type(nommé/positionnel)</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h1 id='exemples' class="title is-flex is-align-items-center mt-4 is-1">Exemples<a href='#exemples' class='anchor'>#</a>
+</h1><hr>
+<table>
+  <thead>
+      <tr>
+          <th>Markdown</th>
+          <th>Rendu</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><pre tabindex="0"><code>{{&lt;/* md */&gt;}}
+Je suis du texte écrit en **markdown**
+{{&lt;/* /md */&gt;}}
+</code></pre></td>
+          <td>Je suis du texte écrit en <strong>markdown</strong></td>
+      </tr>
+      <tr>
+          <td><pre tabindex="0"><code>| Markdown | Rendu |
+| -------- | ----- |
+|{{&lt;/* md */&gt;}}
+```
+{{&lt;/* md */&gt;}}
+Je suis du texte écrit en **markdown**
+{{&lt;/* /md */&gt;}}
+```
+{{&lt;/* /md */&gt;}}|{{&lt;/* md */&gt;}}
+Je suis du texte écrit en **markdown**
+{{&lt;/* /md */&gt;}}
+</code></pre></td>
+          <td>Tableau d&rsquo;exemples sans la ligne courante (<em><strong>Rendu non disponible car deux shortcode md sont imbriqués dans cet exemple</strong></em>)</td>
+      </tr>
+  </tbody>
+</table>
+</div><div class="column is-flex paddingless" id="tocWrapper">
+  <div class="is-flex is-flex-direction-column paddingless" id="tocContainer">
+    <div
+      class="toc-header is-flex is-justify-content-space-between is-align-items-center"
+    >
+      <h6 class="toc-title has-text-weight-bold">Sur cette page:</h6>
+      <i
+        title="Retour en haut"
+        id="tocBackToTop"
+        class="fa-solid fa-circle-arrow-up"
+      ></i>
+    </div>
+    <div
+      class="is-flex is-flex-direction-column is-justify-content-space-between is-overflow-y has-text-weight-bold"
+      id="tocContent"
+    >
+      <div id="toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#paramètres">Paramètres</a></li>
+    <li><a href="#exemples">Exemples</a></li>
+  </ul>
+</nav></div>
+      <div id="taxonomies"><div class="taxonomy-wrapper is-flex is-flex-wrap-wrap"><div class="toc-header">
+                  <h6 class="toc-title has-text-weight-bold">Categories</h6>
+                </div><a
+                    href="/fr/categories/shortcode/"
+                    class="taxonomy is-flex is-justify-content-center is-align-items-center"
+                    ><i class="fa-solid fa-circle-dot"></i>Shortcode</a
+                  ></div><div class="taxonomy-wrapper is-flex is-flex-wrap-wrap"><div class="toc-header">
+                  <h6 class="toc-title has-text-weight-bold">Tags</h6>
+                </div><a
+                    href="/fr/tags/gestion-du-contenu/"
+                    class="taxonomy is-flex is-justify-content-center is-align-items-center"
+                    ><i class="fa-solid fa-circle-dot"></i>Gestion Du Contenu</a
+                  ></div></div>
+    </div>
+  </div>
+  <div
+    class="is-flex is-justify-content-center is-align-items-center paddingless"
+    id="tocCollapsible"
+    title="Réduire/Développer la table des matières"
+  >
+    <i class="fa-solid fa-angles-right fa-lg"></i>
+  </div>
+</div>
+</div>
+</div><script type='text/javascript'>
+  const baseUrl = new URL('\/fr', 'http:\/\/localhost:1313\/').href;
+  const codeCopyBefore = 'Copier dans le presse-papiers';
+  const codeCopyAfter = 'Copié dans le presse-papiers';
+  const svgDownloadLabel = 'Télécharger en tant que SVG';
+  const loaderLabel = 'Chargement';
+  const searchNoResults = 'Aucun résultat trouvé';
+  const introNextLabel = 'Suivant';
+  const introPrevLabel = 'Précédent';
+  const introSkipLabel = '✗';
+  const introDoneLabel = 'Terminer';
+  const naCommonLabel = 'Non disponible';
+  const jsoneditorValidateError = 'Erreur de formulaire';
+</script>
+<script
+      type="module"
+      src="/js/theme/modules/const.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/modules/helpers.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/modules/helpersGlobal.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/init.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/navbar.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/print.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/qrcode.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/search.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/shortcuts.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/sidebar.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/toc.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/flexsearch/flexsearch.bundle.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/qrious/qrious.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/overlay-scrollbars/overlayscrollbars.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/asciinema/asciinema-player.min.js"
+    ></script>
+</body>
+</html>
